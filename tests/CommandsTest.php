@@ -8,21 +8,21 @@ use Xammie\MakeCommands\Commands\EnumMakeCommand;
 use Xammie\MakeCommands\Commands\ServiceMakeCommand;
 
 it('can make action', function () {
-    artisan(ActionMakeCommand::class, ['name' => 'TestAction'])->assertSuccessful();
+    artisan(ActionMakeCommand::class, ['name' => 'TestAction'])->assertExitCode(0);
 });
 
 it('can make contract', function () {
-    artisan(ContractMakeCommand::class, ['name' => 'TestContract'])->assertSuccessful();
+    artisan(ContractMakeCommand::class, ['name' => 'TestContract'])->assertExitCode(0);
 });
 
 it('can make dto', function () {
-    artisan(DtoMakeCommand::class, ['name' => 'TestDto'])->assertSuccessful();
+    artisan(DtoMakeCommand::class, ['name' => 'TestDto'])->assertExitCode(0);
 });
 
 it('can make enum', function () {
-    artisan(EnumMakeCommand::class, ['name' => 'TestEnum'])->assertSuccessful();
+    artisan(EnumMakeCommand::class, ['name' => 'TestEnum'])->assertExitCode(0);
 });
 
 it('can make service', function () {
-    artisan(ServiceMakeCommand::class, ['name' => 'TestService'])->assertSuccessful();
+    artisan(ServiceMakeCommand::class, ['name' => 'TestService'])->assertExitCode(0);
 });
