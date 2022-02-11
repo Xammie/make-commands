@@ -1,11 +1,11 @@
 <?php
 
+use function Pest\Laravel\artisan;
 use Xammie\MakeCommands\Commands\ActionMakeCommand;
 use Xammie\MakeCommands\Commands\ContractMakeCommand;
 use Xammie\MakeCommands\Commands\DtoMakeCommand;
 use Xammie\MakeCommands\Commands\EnumMakeCommand;
 use Xammie\MakeCommands\Commands\ServiceMakeCommand;
-use function Pest\Laravel\artisan;
 
 it('can make action', function () {
     artisan(ActionMakeCommand::class, ['name' => 'TestAction'])->assertSuccessful();
