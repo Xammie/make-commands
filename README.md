@@ -11,7 +11,7 @@ This package extends the default laravel make commands to create classes like ac
 php artisan make:action CreateUserAction
 php artisan make:enum OrderStatusEnum
 php artisan make:service PaymentService
-php artians make:contract CreatesUserContract
+php artisan make:contract CreatesUserContract
 ```
 
 ## Installation
@@ -47,7 +47,7 @@ return [
 php artisan make:action CreateUserAction
 php artisan make:enum OrderStatusEnum
 php artisan make:service PaymentService
-php artians make:contract CreatesUserContract
+php artisan make:contract CreatesUserContract
 ```
 
 ## Testing
