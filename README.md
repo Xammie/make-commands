@@ -5,12 +5,13 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/xammie/make-commands/Check%20&%20fix%20styling?label=code%20style)](https://github.com/xammie/make-commands/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/xammie/make-commands.svg?style=flat-square)](https://packagist.org/packages/xammie/make-commands)
 
-This package gives you more make commands to create classes like actions, services, contracts and more.
+This package extends the default laravel make commands to create classes like actions, services, enums and more.
 
 ```
-php artisan make:service PaymentService
 php artisan make:action CreateUserAction
-php artians make:contract ...
+php artisan make:enum OrderStatusEnum
+php artisan make:service PaymentService
+php artians make:contract CreatesUserContract
 ```
 
 ## Installation
@@ -36,9 +37,11 @@ return [
 
 ## Usage
 
-```php
-$makeCommands = new Xammie\MakeCommands();
-echo $makeCommands->echoPhrase('Hello, Xammie!');
+```
+php artisan make:action CreateUserAction
+php artisan make:enum OrderStatusEnum
+php artisan make:service PaymentService
+php artians make:contract CreatesUserContract
 ```
 
 ## Testing
