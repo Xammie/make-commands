@@ -34,4 +34,3 @@ class ActionMakeCommand extends GeneratorCommand
         return $rootNamespace.'\Actions';
     }
 }
-
