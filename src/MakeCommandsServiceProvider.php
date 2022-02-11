@@ -28,4 +28,13 @@ class MakeCommandsServiceProvider extends PackageServiceProvider
             ->hasCommand(EnumMakeCommand::class)
             ->hasCommand(ServiceMakeCommand::class);
     }
+
+    public function bootingPackage()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                $this->package->basePath('/../src/Commands/stubs') => base_path("stubs"),
+            ], "{$this->package->shortName()}-stubs");
+        }
+    }
 }

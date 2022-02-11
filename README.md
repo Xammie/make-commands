@@ -22,6 +22,12 @@ You can install the package via composer:
 composer require --dev xammie/make-commands
 ```
 
+You can publish the stubs with:
+
+```bash
+php artisan vendor:publish --tag="make-commands-stubs"
+```
+
 You can publish the config file with:
 
 ```bash
