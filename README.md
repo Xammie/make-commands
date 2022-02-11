@@ -7,11 +7,24 @@
 
 This package extends the default laravel make commands to create classes like actions, services, enums and more.
 
-```
+```bash
 php artisan make:action CreateUserAction
-php artisan make:enum OrderStatusEnum
-php artisan make:service PaymentService
-php artisan make:contract CreatesUserContract
+```
+
+This will create the file `app/Actions/CreateUserAction.php`
+
+```php
+<?php
+
+namespace App\Actions;
+
+class CreateUserAction
+{
+    public function handle()
+    {
+        //
+    }
+}
 ```
 
 ## Installation
@@ -43,11 +56,14 @@ return [
 
 ## Usage
 
+The following commands are available.
+
 ```
 php artisan make:action CreateUserAction
 php artisan make:enum OrderStatusEnum
 php artisan make:service PaymentService
 php artisan make:contract CreatesUserContract
+php artisan make:dto RestRequestObject
 ```
 
 ## Testing
