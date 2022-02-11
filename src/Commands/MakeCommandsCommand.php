@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Xammie\MakeCommands\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MakeCommandsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'make-commands';
 
     public $description = 'My command';
 
