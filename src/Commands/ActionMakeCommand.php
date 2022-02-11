@@ -10,7 +10,7 @@ class ActionMakeCommand extends GeneratorCommand
 
     protected $description = 'Create a new action class';
 
-    protected $type = 'class';
+    protected $type = 'Action';
 
     protected function alreadyExists($rawName): bool
     {

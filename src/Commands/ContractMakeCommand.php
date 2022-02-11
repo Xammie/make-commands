@@ -10,7 +10,7 @@ class ContractMakeCommand extends GeneratorCommand
 
     protected $description = 'Create a new contract interface';
 
-    protected $type = 'class';
+    protected $type = 'Contract';
 
     protected function alreadyExists($rawName): bool
     {

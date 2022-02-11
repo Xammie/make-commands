@@ -10,7 +10,7 @@ class DtoMakeCommand extends GeneratorCommand
 
     protected $description = 'Create a new dto class';
 
-    protected $type = 'class';
+    protected $type = 'Dto';
 
     protected function alreadyExists($rawName): bool
     {

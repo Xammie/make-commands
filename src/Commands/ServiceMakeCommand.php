@@ -10,7 +10,7 @@ class ServiceMakeCommand extends GeneratorCommand
 
     protected $description = 'Create a new service class';
 
-    protected $type = 'class';
+    protected $type = 'Service';
 
     protected function alreadyExists($rawName): bool
     {

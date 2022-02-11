@@ -10,7 +10,7 @@ class EnumMakeCommand extends GeneratorCommand
 
     protected $description = 'Create a new enum';
 
-    protected $type = 'class';
+    protected $type = 'Enum';
 
     protected function alreadyExists($rawName): bool
     {

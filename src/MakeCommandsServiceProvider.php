@@ -22,11 +22,13 @@ class MakeCommandsServiceProvider extends PackageServiceProvider
         $package
             ->name('make-commands')
             ->hasConfigFile()
-            ->hasCommand(ActionMakeCommand::class)
-            ->hasCommand(ContractMakeCommand::class)
-            ->hasCommand(DtoMakeCommand::class)
-            ->hasCommand(EnumMakeCommand::class)
-            ->hasCommand(ServiceMakeCommand::class);
+            ->hasCommands([
+                ActionMakeCommand::class,
+                ContractMakeCommand::class,
+                DtoMakeCommand::class,
+                EnumMakeCommand::class,
+                ServiceMakeCommand::class,
+            ]);
     }
 
     public function bootingPackage()
