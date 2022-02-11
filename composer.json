@@ -34,8 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Xammie\\MakeCommands\\": "src",
-            "Xammie\\MakeCommands\\Database\\Factories\\": "database/factories"
+            "Xammie\\MakeCommands\\": "src"
         }
     },
     "autoload-dev": {
@@ -59,10 +58,7 @@
         "laravel": {
             "providers": [
                 "Xammie\\MakeCommands\\MakeCommandsServiceProvider"
-            ],
-            "aliases": {
-                "MakeCommands": "Xammie\\MakeCommands\\Facades\\MakeCommands"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",

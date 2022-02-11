@@ -18,8 +18,6 @@ class MakeCommandsServiceProvider extends PackageServiceProvider
         $package
             ->name('make-commands')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_make-commands_table')
             ->hasCommand(MakeCommandsCommand::class);
     }
 }
