@@ -6,31 +6,16 @@ use Illuminate\Console\GeneratorCommand;
 
 class ActionMakeCommand extends GeneratorCommand
 {
+    use GeneratorTrait;
+
     protected $name = 'make:action';
 
     protected $description = 'Create a new action class';
 
     protected $type = 'Action';
 
-    protected function alreadyExists($rawName): bool
+    protected function stubName(): string
     {
-        return class_exists($rawName) || $this->files->exists($this->getPath($this->qualifyClass($rawName)));
-    }
-
-    protected function getStub(): string
-    {
-        return $this->resolveStubPath('/stubs/action.stub');
-    }
-
-    protected function resolveStubPath(string $stub): string
-    {
-        return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
-            ? $customPath
-            : __DIR__.$stub;
-    }
-
-    protected function getDefaultNamespace($rootNamespace): string
-    {
-        return $rootNamespace.'\Actions';
+        return 'action';
     }
 }
