@@ -2,6 +2,15 @@
 
 All notable changes to `make-commands` will be documented in this file.
 
+## 0.3.0 - 2022-02-16
+
+## What's Changed
+
+- Add config for namespaces by @Xammie in https://github.com/Xammie/make-commands/pull/1
+- Add interface and repository make commands by @Xammie in https://github.com/Xammie/make-commands/pull/2
+
+**Full Changelog**: https://github.com/Xammie/make-commands/compare/v0.2.0...v0.3.0
+
 ## v0.2.0 - 2022-02-11
 
 - Stubs can be published
