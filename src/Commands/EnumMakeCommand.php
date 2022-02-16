@@ -6,15 +6,17 @@ use Illuminate\Console\GeneratorCommand;
 
 class EnumMakeCommand extends GeneratorCommand
 {
+    use GeneratorTrait;
+
     protected $name = 'make:enum';
 
     protected $description = 'Create a new enum';
 
     protected $type = 'Enum';
 
-    protected function alreadyExists($rawName): bool
+    protected function stubName(): string
     {
-        return class_exists($rawName) || $this->files->exists($this->getPath($this->qualifyClass($rawName)));
+        return 'enum';
     }
 
     protected function getStub(): string
@@ -24,18 +26,6 @@ class EnumMakeCommand extends GeneratorCommand
             return $this->resolveStubPath('/stubs/class-enum.stub');
         }
 
-        return $this->resolveStubPath('/stubs/enum.stub');
-    }
-
-    protected function resolveStubPath(string $stub): string
-    {
-        return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
-            ? $customPath
-            : __DIR__ . $stub;
-    }
-
-    protected function getDefaultNamespace($rootNamespace): string
-    {
-        return $rootNamespace . '\Enums';
+        return $this->resolveStubPath("/stubs/{$this->stubName()}.stub");
     }
 }
