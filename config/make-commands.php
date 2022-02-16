@@ -14,6 +14,8 @@ return [
         'contract' => 'Contracts',
         'dto' => 'Dtos',
         'enum' => 'Enums',
+        'interface' => 'Interfaces',
+        'repository' => 'Repositories',
         'service' => 'Services'
     ],
 ];
