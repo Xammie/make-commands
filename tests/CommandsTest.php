@@ -1,12 +1,12 @@
 <?php
 
-use Xammie\MakeCommands\Commands\InterfaceMakeCommand;
-use Xammie\MakeCommands\Commands\RepositoryMakeCommand;
 use function Pest\Laravel\artisan;
 use Xammie\MakeCommands\Commands\ActionMakeCommand;
 use Xammie\MakeCommands\Commands\ContractMakeCommand;
 use Xammie\MakeCommands\Commands\DtoMakeCommand;
 use Xammie\MakeCommands\Commands\EnumMakeCommand;
+use Xammie\MakeCommands\Commands\InterfaceMakeCommand;
+use Xammie\MakeCommands\Commands\RepositoryMakeCommand;
 use Xammie\MakeCommands\Commands\ServiceMakeCommand;
 
 it('can make action', function () {
