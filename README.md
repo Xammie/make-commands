@@ -58,7 +58,8 @@ return [
         'enum' => 'Enums',
         'interface' => 'Interfaces',
         'repository' => 'Repositories',
-        'service' => 'Services'
+        'service' => 'Services',
+        'collection' => 'Collection',
     ],
 ];
 ```
@@ -72,6 +73,7 @@ php artisan make:action CreateUserAction
 php artisan make:enum OrderStatusEnum
 php artisan make:service PaymentService
 php artisan make:contract CreatesUserContract
+php artisan make:collection OrderCollection
 php artisan make:interface OrderRepositoryInterface
 php artisan make:repository OrderRepository
 php artisan make:dto RestRequestObject

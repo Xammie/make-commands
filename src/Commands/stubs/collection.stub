@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Support\Collection;
+
+class {{ class }} extends Collection
+{
+
+}

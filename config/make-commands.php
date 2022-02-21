@@ -16,6 +16,7 @@ return [
         'enum' => 'Enums',
         'interface' => 'Interfaces',
         'repository' => 'Repositories',
-        'service' => 'Services'
+        'service' => 'Services',
+        'collection' => 'Collections',
     ],
 ];
