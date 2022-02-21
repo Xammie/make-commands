@@ -27,13 +27,13 @@ class MakeCommandsServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasCommands([
                 ActionMakeCommand::class,
+                CollectionMakeCommand::class,
                 ContractMakeCommand::class,
                 DtoMakeCommand::class,
                 EnumMakeCommand::class,
                 InterfaceMakeCommand::class,
                 RepositoryMakeCommand::class,
                 ServiceMakeCommand::class,
-                CollectionMakeCommand::class,
             ]);
     }
 

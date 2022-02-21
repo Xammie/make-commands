@@ -11,12 +11,12 @@ return [
     */
     'namespaces' => [
         'action' => 'Actions',
+        'collection' => 'Collections',
         'contract' => 'Contracts',
         'dto' => 'Dtos',
         'enum' => 'Enums',
         'interface' => 'Interfaces',
         'repository' => 'Repositories',
         'service' => 'Services',
-        'collection' => 'Collections',
     ],
 ];

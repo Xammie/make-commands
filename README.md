@@ -53,13 +53,13 @@ This is the contents of the published config file:
 return [
     'namespaces' => [
         'action' => 'Actions',
+        'collection' => 'Collection',
         'contract' => 'Contracts',
         'dto' => 'Dtos',
         'enum' => 'Enums',
         'interface' => 'Interfaces',
         'repository' => 'Repositories',
         'service' => 'Services',
-        'collection' => 'Collection',
     ],
 ];
 ```
@@ -70,13 +70,13 @@ The following commands are available.
 
 ```
 php artisan make:action CreateUserAction
-php artisan make:enum OrderStatusEnum
-php artisan make:service PaymentService
-php artisan make:contract CreatesUserContract
 php artisan make:collection OrderCollection
+php artisan make:contract CreatesUserContract
+php artisan make:dto RestRequestObject
+php artisan make:enum OrderStatusEnum
 php artisan make:interface OrderRepositoryInterface
 php artisan make:repository OrderRepository
-php artisan make:dto RestRequestObject
+php artisan make:service PaymentService
 ```
 
 ## Testing

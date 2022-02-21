@@ -14,6 +14,10 @@ it('can make action', function () {
     artisan(ActionMakeCommand::class, ['name' => 'TestAction'])->assertExitCode(0);
 });
 
+it('can make collection', function () {
+    artisan(CollectionMakeCommand::class, ['name' => 'TestCollection'])->assertExitCode(0);
+});
+
 it('can make contract', function () {
     artisan(ContractMakeCommand::class, ['name' => 'TestContract'])->assertExitCode(0);
 });
@@ -36,8 +40,4 @@ it('can make repository', function () {
 
 it('can make service', function () {
     artisan(ServiceMakeCommand::class, ['name' => 'TestService'])->assertExitCode(0);
-});
-
-it('can make collection', function () {
-    artisan(CollectionMakeCommand::class, ['name' => 'TestCollection'])->assertExitCode(0);
 });
