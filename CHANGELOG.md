@@ -2,6 +2,20 @@
 
 All notable changes to `make-commands` will be documented in this file.
 
+## 0.4.0 - 2022-02-21
+
+## What's Changed
+
+- Bump dependabot/fetch-metadata from 1.1.1 to 1.2.0 by @dependabot in https://github.com/Xammie/make-commands/pull/3
+- Added Collection as make command by @ItsRD in https://github.com/Xammie/make-commands/pull/4
+
+## New Contributors
+
+- @dependabot made their first contribution in https://github.com/Xammie/make-commands/pull/3
+- @ItsRD made their first contribution in https://github.com/Xammie/make-commands/pull/4
+
+**Full Changelog**: https://github.com/Xammie/make-commands/compare/v0.3.0...0.4.0
+
 ## 0.3.0 - 2022-02-16
 
 ## What's Changed
