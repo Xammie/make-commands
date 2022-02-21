@@ -8,9 +8,14 @@ use Xammie\MakeCommands\Commands\EnumMakeCommand;
 use Xammie\MakeCommands\Commands\InterfaceMakeCommand;
 use Xammie\MakeCommands\Commands\RepositoryMakeCommand;
 use Xammie\MakeCommands\Commands\ServiceMakeCommand;
+use Xammie\MakeCommands\Commands\CollectionMakeCommand;
 
 it('can make action', function () {
     artisan(ActionMakeCommand::class, ['name' => 'TestAction'])->assertExitCode(0);
+});
+
+it('can make collection', function () {
+    artisan(CollectionMakeCommand::class, ['name' => 'TestCollection'])->assertExitCode(0);
 });
 
 it('can make contract', function () {

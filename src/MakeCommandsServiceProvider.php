@@ -5,6 +5,7 @@ namespace Xammie\MakeCommands;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Xammie\MakeCommands\Commands\ActionMakeCommand;
+use Xammie\MakeCommands\Commands\CollectionMakeCommand;
 use Xammie\MakeCommands\Commands\ContractMakeCommand;
 use Xammie\MakeCommands\Commands\DtoMakeCommand;
 use Xammie\MakeCommands\Commands\EnumMakeCommand;
@@ -26,6 +27,7 @@ class MakeCommandsServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasCommands([
                 ActionMakeCommand::class,
+                CollectionMakeCommand::class,
                 ContractMakeCommand::class,
                 DtoMakeCommand::class,
                 EnumMakeCommand::class,
