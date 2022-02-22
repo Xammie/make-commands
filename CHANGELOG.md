@@ -2,6 +2,10 @@
 
 All notable changes to `make-commands` will be documented in this file.
 
+## v0.4.0 - 2022-02-22
+
+**Full Changelog**: https://github.com/Xammie/make-commands/compare/0.3.0...v0.4.0
+
 ## 0.4.0 - 2022-02-21
 
 ## What's Changed
