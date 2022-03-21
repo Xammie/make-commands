@@ -1,5 +1,6 @@
 <?php
 
+use function Pest\Laravel\artisan;
 use Xammie\MakeCommands\Commands\ActionMakeCommand;
 use Xammie\MakeCommands\Commands\CollectionMakeCommand;
 use Xammie\MakeCommands\Commands\ContractMakeCommand;
@@ -9,7 +10,6 @@ use Xammie\MakeCommands\Commands\InterfaceMakeCommand;
 use Xammie\MakeCommands\Commands\RepositoryMakeCommand;
 use Xammie\MakeCommands\Commands\ServiceMakeCommand;
 use Xammie\MakeCommands\Commands\TraitMakeCommand;
-use function Pest\Laravel\artisan;
 
 it('can make action', function () {
     artisan(ActionMakeCommand::class, ['name' => 'TestAction'])->assertExitCode(0);
