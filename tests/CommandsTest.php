@@ -3,6 +3,7 @@
 use function Pest\Laravel\artisan;
 use Xammie\MakeCommands\Commands\ActionMakeCommand;
 use Xammie\MakeCommands\Commands\CollectionMakeCommand;
+use Xammie\MakeCommands\Commands\ConfigMakeCommand;
 use Xammie\MakeCommands\Commands\ContractMakeCommand;
 use Xammie\MakeCommands\Commands\DtoMakeCommand;
 use Xammie\MakeCommands\Commands\EnumMakeCommand;
@@ -17,6 +18,10 @@ it('can make action', function () {
 
 it('can make collection', function () {
     artisan(CollectionMakeCommand::class, ['name' => 'TestCollection'])->assertExitCode(0);
+});
+
+it('can make config', function () {
+    artisan(ConfigMakeCommand::class, ['name' => 'test-config'])->assertExitCode(0);
 });
 
 it('can make contract', function () {
