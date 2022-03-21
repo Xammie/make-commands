@@ -71,6 +71,7 @@ The following commands are available.
 ```
 php artisan make:action CreateUserAction
 php artisan make:collection OrderCollection
+php artisan make:config config-file
 php artisan make:contract CreatesUserContract
 php artisan make:dto RestRequestObject
 php artisan make:enum OrderStatusEnum

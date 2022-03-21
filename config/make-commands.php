@@ -12,6 +12,7 @@ return [
     'namespaces' => [
         'action' => 'Actions',
         'collection' => 'Collections',
+        'config' => 'config',
         'contract' => 'Contracts',
         'dto' => 'Dtos',
         'enum' => 'Enums',
