@@ -78,6 +78,7 @@ php artisan make:enum OrderStatusEnum
 php artisan make:interface OrderRepositoryInterface
 php artisan make:repository OrderRepository
 php artisan make:service PaymentService
+php artisan make:trait TraitHelper
 ```
 
 ## Testing

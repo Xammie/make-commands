@@ -13,16 +13,12 @@ use Xammie\MakeCommands\Commands\EnumMakeCommand;
 use Xammie\MakeCommands\Commands\InterfaceMakeCommand;
 use Xammie\MakeCommands\Commands\RepositoryMakeCommand;
 use Xammie\MakeCommands\Commands\ServiceMakeCommand;
+use Xammie\MakeCommands\Commands\TraitMakeCommand;
 
 class MakeCommandsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
         $package
             ->name('make-commands')
             ->hasConfigFile()
@@ -36,6 +32,7 @@ class MakeCommandsServiceProvider extends PackageServiceProvider
                 InterfaceMakeCommand::class,
                 RepositoryMakeCommand::class,
                 ServiceMakeCommand::class,
+                TraitMakeCommand::class,
             ]);
     }
 

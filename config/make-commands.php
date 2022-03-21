@@ -19,5 +19,6 @@ return [
         'interface' => 'Interfaces',
         'repository' => 'Repositories',
         'service' => 'Services',
+        'trait' => 'Traits',
     ],
 ];
