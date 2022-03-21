@@ -9,6 +9,7 @@ use Xammie\MakeCommands\Commands\EnumMakeCommand;
 use Xammie\MakeCommands\Commands\InterfaceMakeCommand;
 use Xammie\MakeCommands\Commands\RepositoryMakeCommand;
 use Xammie\MakeCommands\Commands\ServiceMakeCommand;
+use Xammie\MakeCommands\Commands\TraitMakeCommand;
 
 it('can make action', function () {
     artisan(ActionMakeCommand::class, ['name' => 'TestAction'])->assertExitCode(0);
@@ -40,4 +41,8 @@ it('can make repository', function () {
 
 it('can make service', function () {
     artisan(ServiceMakeCommand::class, ['name' => 'TestService'])->assertExitCode(0);
+});
+
+it('can make trait', function () {
+    artisan(TraitMakeCommand::class, ['name' => 'TestTrait'])->assertExitCode(0);
 });
