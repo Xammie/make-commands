@@ -53,13 +53,15 @@ This is the contents of the published config file:
 return [
     'namespaces' => [
         'action' => 'Actions',
-        'collection' => 'Collection',
+        'collection' => 'Collections',
+        'config' => 'config',
         'contract' => 'Contracts',
         'dto' => 'Dtos',
         'enum' => 'Enums',
         'interface' => 'Interfaces',
         'repository' => 'Repositories',
         'service' => 'Services',
+        'trait' => 'Traits',
     ],
 ];
 ```
