@@ -24,7 +24,7 @@ class ConfigMakeCommand extends GeneratorCommand
     {
         $name = Str::replaceFirst($this->rootNamespace(), '', $name);
 
-        return str_replace('\\', '/', base_path($name)) . '.php';
+        return str_replace('\\', '/', base_path($name)).'.php';
     }
 
     protected function alreadyExists($rawName): bool

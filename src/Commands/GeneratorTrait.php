@@ -23,6 +23,6 @@ trait GeneratorTrait
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace.'\\'. config("make-commands.namespaces.{$this->stubName()}");
+        return $rootNamespace.'\\'.config("make-commands.namespaces.{$this->stubName()}");
     }
 }

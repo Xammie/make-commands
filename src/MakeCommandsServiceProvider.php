@@ -40,7 +40,7 @@ class MakeCommandsServiceProvider extends PackageServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                $this->package->basePath('/../src/Commands/stubs') => base_path("stubs"),
+                $this->package->basePath('/../src/Commands/stubs') => base_path('stubs'),
             ], "{$this->package->shortName()}-stubs");
         }
     }
