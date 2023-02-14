@@ -2,6 +2,14 @@
 
 All notable changes to `make-commands` will be documented in this file.
 
+## v0.5.0 - 2023-02-14
+
+### What's Changed
+
+- add: Laravel 10 support by @Xammie in https://github.com/Xammie/make-commands/pull/16
+
+**Full Changelog**: https://github.com/Xammie/make-commands/compare/v0.4.1...v0.5.0
+
 ## v0.4.1 - Traits and config files - 2022-03-21
 
 ## What's Changed
